@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title></title>
+
+	<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+
+<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/review.css">
+	<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style>
+	img
+	{
+		width:100%;
+		height:250px;
+		margin: 0 auto;
+	}
+
+	#user
+{
+  float:right;
+  margin-right:-5px;
+  margin-top: -10px;
+
+
+}
+h1{
+	float:left;
+	margin-left: 20px;
+}
+h3
+{
+	font-size: 20px;
+}
+p
+{
+font-size: 12px;
+font-weight: bold;
+}
+
+#logout{
+	margin-right:-70px;
+	margin-top: 15px;
+}
+#movie
+{
+margin:0 auto;
+}
+#comm
+{
+
+	background-color: #f2f2f2;
+}
+	</style>
+
+
+</head>
+<body>
+	<body>
+<?xml version="1.0" encoding="UTF-8" ?>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<header>
+<div class="imgcontainer">
+<img src="img/mlogo.png" alt="Movie Review Logo" id="logo" style="width:50px;height:50px;">
+</div>
+<form>
+<div class="container">
+   <h1 style="color: white">Movie Club</h1>
+   <div id="user">
+</div>
+<button type="button" id="logout">Logout</button> 
+<!--</div>-->
+</form>
+ 
+</header>
+<br><br>
+<!--<div class="container">-->
+ 
+
+<div id="movie">
+<img id="img"/><br>
+MovieName:<label id="moviename"> </label><br>
+Director: <label id="director"></label><br>
+Producer: <label id="producer"></label><br>
+Language: <label id="language"></label><br>
+Maincast: <label id="maincast"></label><br>
+Descripton: <label id="description"></label><br>
+
+	
+<p>Rating:</p>
+ <div id="star">
+<span class="star-cb-group">
+<input type="radio" id="rating-5" name="rating" value="5" />
+<label for="rating-5">5</label>
+<input type="radio" id="rating-4" name="rating" value="4" />
+<label for="rating-4">4</label>
+<input type="radio" id="rating-3" name="rating" value="3" checked="checked"  />
+<label for="rating-3">3</label>
+<input type="radio" id="rating-2" name="rating" value="2" />
+<label for="rating-2">2</label>
+<input type="radio" id="rating-1" name="rating" value="1" />
+<label for="rating-1">1</label>
+</span>
+</div>
+</div>
+<br>
+<!--
+<div id="comm" style="overflow-y: scroll;height: 250px;"></div>
+
+<div id="display"></div>
+
+<div class="container">
+
+
+
+<!-Form Start->
+
+<div id='form'>
+<div class="row">
+<div class="col-md-12">
+
+<form action="" method="POST" id="commentform">
+
+
+<div id="comment-message" class="form-row">
+<textarea name = "comment" placeholder = "Message" id = "comments" ></textarea>
+</div>
+<label><b>Rating:</b></label>
+<div id="star">
+<span class="star-cb-group">
+<input type="radio" id="rating-5" name="rating" value="5" />
+<label for="rating-5">5</label>
+<input type="radio" id="rating-4" name="rating" value="4" />
+<label for="rating-4">4</label>
+<input type="radio" id="rating-3" name="rating" value="3" checked="checked"  />
+<label for="rating-3">3</label>
+<input type="radio" id="rating-2" name="rating" value="2" />
+<label for="rating-2">2</label>
+<input type="radio" id="rating-1" name="rating" value="1" />
+<label for="rating-1">1</label>
+</span>
+</div>
+<button type="button" id="comment">Submit</button> 
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+-->
+  <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/guestreview.js"></script> 
+   
+           
+         <script src="js/jquery.min.js"></script>
+         <script src="js/bootstrap.js"></script>
+
+         
+
+</body>
+</html>

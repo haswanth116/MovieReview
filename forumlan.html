@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/forlan.css">
+<style>
+
+
+
+img{
+  width: 150px;
+    height:200px ;
+    
+}
+tr{
+  
+  color:white;
+  
+}
+td{
+  
+  text-align: center;
+  padding:7px;
+}
+span{
+  position:absolute;
+  margin-top:12px;
+  margin-left: -5px;
+}
+
+
+
+#user
+{
+  float:right;
+  margin-right:20px;
+  margin-top: 30px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 72px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+#logo{
+  margin-left: 30px;
+  
+  }
+  h1{
+    margin-left:75px;
+  }
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 1000px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+<header>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="imgcontainer">
+<img src="img/mlogo.png" alt="Movie Review Logo" id="logo" style="width:50px;height:50px;">
+</div>
+<form>
+<div class="container">
+   <h1 style="color: white">Movie Club</h1>
+<div id="user"></div>
+<!--</div>-->
+</form>
+ 
+</header>
+<br><br>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-left: 200px;">&times;</a>
+  
+  <a href="#" id="home">Home</a>
+  <a href="#" id="forum">Forum</a>
+ 
+  <a href="#" id="logout" style="margin-right: 160px;">Logout</a>
+
+</div>
+</div>
+<div id="comm" style="overflow-y: scroll;height: 350px;">
+  
+</div>
+<div>
+
+<div id='form'>
+<div class="row">
+<div class="col-md-12">
+
+<form action="" method="POST" id="commentform">
+
+
+<div id="comment-message" class="form-row">
+<textarea name = "comment" placeholder = "Message" id = "comments" ></textarea>
+</div>
+
+<button type="button" id="comment">Submit</button> 
+</form>
+
+</div>
+</div>
+</div>
+
+<div id="forumlan"></div>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+      <script type="text/javascript" src="js/forumlan.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+             
+         <script src="js/jquery.min.js"></script>
+         <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html> 

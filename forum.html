@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/home1.css">
+<style>
+
+img{
+  width: 150px;
+    height:250px ;
+}
+tr{
+  border: 5px solid black;
+}
+td{
+  border:  5px solid black;
+}
+span{
+  position:absolute;
+  margin-top:12px;
+  margin-left: -5px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 72px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+#logo{
+  margin-left: 30px;
+  
+  }
+  h1{
+    margin-left:75px;
+  }
+  #user
+{
+  float:right;
+  margin-right:20px;
+  margin-top: 20px;
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.btn-group button {
+    background-color: #201A19; /* Green background */
+    border: 1px solid dimgrey; /* Green border */
+    color: white; /* White text */
+    padding: 0px 0px; /* Some padding */
+    float: left; /* Float the buttons side by side */
+}
+
+
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #665A57;
+}
+ .myslides{
+   display: none;
+ }
+</style>
+<body>
+<header>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="imgcontainer">
+<img src="img/mlogo.png" alt="Movie Review Logo" id="logo" style="width:50px;height:50px;">
+</div>
+<form>
+<div class="container">
+   <h1 style="color: white">Movie Club</h1>
+<div id="user"></div>
+<!--</div>-->
+</form>
+ 
+</header>
+
+
+
+<div class="btn-group" style="width:100%">
+  <button style="width:24.1%" id="eng">English</button>
+  <button style="width:24.1%" id="hin">Hindi</button>
+  <button style="width:24.1%" id="mal">Malayam</button>
+  <button style="width:24.1%" id="tam">Tamil</button>
+
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-left: 200px">&times;</a>
+   
+  <a href="#" id="home">Home</a>
+  
+  <a href="#" id="logout" style="margin-right: 160px;">Logout</a>
+
+</div>
+
+<div class="mySlides w3-display-container w3-center">
+    <img src="https://farm8.staticflickr.com/7473/27652608915_46ca75645d_b.jpg" style="width:100%">
+       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 ">
+         
+       </div>
+     </div>
+     <div class="mySlides w3-display-container w3-center">
+       <img src="https://i.ytimg.com/vi/E3r7JY64ILw/hqdefault.jpg" style="width:100%">
+          <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+           
+          </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+          <img src="https://img.studioflicks.com/wp-content/uploads/2016/01/Singam-3-aka-S3-Movie-Posters-696x465.jpg" style="width:100%">
+             <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 ">
+               
+             </div>
+           </div>
+
+<div>
+
+
+
+<div id="moviedetail"></div>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+   <script>
+   var myIndex = 0;
+   carousel();
+
+   function carousel() {
+       var i;
+       var x = document.getElementsByClassName("mySlides");
+       for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+       }
+       myIndex++;
+       if (myIndex > x.length) {myIndex = 1}
+       x[myIndex-1].style.display = "block";
+       setTimeout(carousel, 4000);
+   }
+  </script>
+     
+      <script type="text/javascript" src="js/forum.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+             
+         <script src="js/jquery.min.js"></script>
+         <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html> 

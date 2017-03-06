@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/reg.css">
+</head>
+<body>
+
+
+<form >
+
+  <div class="container">    
+    <div class="imgcontainer">
+    <img src="img/mlogo.png" alt="Avatar" id="myImage" class="avatar" required >
+  </div>      
+    <label><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+    <br>
+    <label><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required>    
+    <br>        
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+    <br>
+    <div id="msg" style="color: red"></div>
+    <br>       
+    <button type="button" id="submit">Submit</button>      
+</div>
+<div id="test"></div>
+</form>
+
+       <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/reg.js"></script>               
+         <script src="js/jquery.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

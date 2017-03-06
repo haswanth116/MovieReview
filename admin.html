@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+
+  </head>
+   <body>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<header>
+<div class="imgcontainer">
+<img src="img/mlogo.png" alt="Movie Review Logo" id="logo" style="width:50px;height:50px;">
+</div>
+<form>
+<div class="container">
+   <h1 style="color: white">Movie Club</h1>
+<button type="button" id="edit">edit</button><i class="material-icons" style="font-size:20px;color:white">edit</i>
+<button type="button" id="logout">Logout</button> 
+<!--</div>-->
+</form>
+ 
+</header>
+<br><br>
+<!--<div class="container">-->
+ <div class="imgcontainer">
+ <img  class="image" id="image" src="img/mlogo.png" class="avatar" required >
+ </div>
+<br>
+<button type="button" id="upload">Upload Movie Poster</button>  
+<br>
+
+<label><b>Movie Name:</b></label>
+    <input type="text" placeholder="Enter Movie name" id="moviename" name="moviename" required>
+<br>
+  <label><b>Language:</b></label>
+  <select name="language" style="height:32px; padding:0;" id="language" size="1" required="">
+    <option value="-">Select Language</option>    
+    <option value="malayalam">MALAYALAM</option>
+    <option value="tamil">TAMIL</option>
+    <option value="hindi">HINDI</option> 
+    <option value="english">ENGLISH</option>    
+   
+    </select>
+    <br> 
+<br>
+<label><b>Description:</b></label>
+    <!--<input type="textarea" placeholder="Enter Description" id="description" name="description" required> -->
+    <textarea id="description" placeholder="Enter Description"></textarea>
+    <br>
+
+<label><b>Rating:</b></label>
+<br>
+<div id="star">
+<span class="star-cb-group">
+<input type="radio" id="rating-5" name="rating" value="5" />
+<label for="rating-5">5</label>
+<input type="radio" id="rating-4" name="rating" value="4" />
+<label for="rating-4">4</label>
+<input type="radio" id="rating-3" name="rating" value="3" checked="checked"  />
+<label for="rating-3">3</label>
+<input type="radio" id="rating-2" name="rating" value="2" />
+<label for="rating-2">2</label>
+<input type="radio" id="rating-1" name="rating" value="1" />
+<label for="rating-1">1</label>
+</span>
+</div>
+    <br>
+    <h2>Details</h2>
+<br>
+<label><b>Director:</b></label>
+    <input type="text" placeholder="Enter Director Name" id="director" name="director" required> 
+<br>
+
+<label><b>Producer:</b></label>
+    <input type="text" placeholder="Enter Producer Name" id="producer" name="producer" required> 
+<br>
+<label><b>Main Cast:</b></label>
+   
+    <textarea id="maincast" placeholder="Enter Main Cast"></textarea>
+    
+ <button type="button" id="submit">Submit</button>   
+
+
+</div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/admin.js"></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js'></script>   
+   <script src="js/index.js"></script>           
+         <script src="js/jquery.min.js"></script>
+         <script src="js/bootstrap.js"></script>
+
+         
+  </body>
+</html>
